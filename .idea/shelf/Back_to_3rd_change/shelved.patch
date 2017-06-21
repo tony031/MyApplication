@@ -1,0 +1,106 @@
+Index: app/src/main/res/values/strings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/values/strings.xml	(date 1497593203000)
++++ app/src/main/res/values/strings.xml	(revision )
+@@ -1,4 +1,4 @@
+ <resources>
+     <string name="app_name">My Application</string>
+-    <string name="change_ver">3rd Change</string>
++    <string name="change_ver">5th Change and Add Activity</string>
+ </resources>
+Index: app/src/main/java/com/golfmechanix/myapplication/Main2Activity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/golfmechanix/myapplication/Main2Activity.java	(revision )
++++ app/src/main/java/com/golfmechanix/myapplication/Main2Activity.java	(revision )
+@@ -0,0 +1,13 @@
++package com.golfmechanix.myapplication;
++
++import android.support.v7.app.AppCompatActivity;
++import android.os.Bundle;
++
++public class Main2Activity extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        setContentView(R.layout.activity_main2);
++    }
++}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(date 1497593203000)
++++ .idea/misc.xml	(revision )
+@@ -59,30 +59,4 @@
+   <component name="ProjectType">
+     <option name="id" value="Android" />
+   </component>
+-  <component name="masterDetails">
+-    <states>
+-      <state key="Copyright.UI">
+-        <settings>
+-          <splitter-proportions>
+-            <option name="proportions">
+-              <list>
+-                <option value="0.2" />
+-              </list>
+-            </option>
+-          </splitter-proportions>
+-        </settings>
+-      </state>
+-      <state key="ScopeChooserConfigurable.UI">
+-        <settings>
+-          <splitter-proportions>
+-            <option name="proportions">
+-              <list>
+-                <option value="0.2" />
+-              </list>
+-            </option>
+-          </splitter-proportions>
+-        </settings>
+-      </state>
+-    </states>
+-  </component>
+ </project>
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_main2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_main2.xml	(revision )
++++ app/src/main/res/layout/activity_main2.xml	(revision )
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="utf-8"?>
++<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context="com.golfmechanix.myapplication.Main2Activity">
++
++</android.support.constraint.ConstraintLayout>
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/AndroidManifest.xml	(date 1497593203000)
++++ app/src/main/AndroidManifest.xml	(revision )
+@@ -15,6 +15,7 @@
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
++        <activity android:name=".Main2Activity"></activity>
+     </application>
+ 
+ </manifest>
+\ No newline at end of file
